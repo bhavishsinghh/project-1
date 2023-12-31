@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Bebas Neue",sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scoreboard{
+    border: 5px solid black;
+    margin-top: 25px;
+    width: 700px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+.score{
+    width: 150px;
+    height: 114px;
+    border: 4.5px solid black;
+    border-radius: 10px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score h1{
+    font-size: 56px;
+}
+.score p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    color: blue;
+}
+.score h1{
+    color: red;
+}
+.hands{
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    background-image: url(assest/triangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.paper{
+    margin-right: 20px;
+}
+.scissors{
+    margin-left: 20px;
+}
+.hands .hand{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.hands .hand:hover{
+    transform: translate3d(0px,-8px,0px);
+}
+.contest{
+    width: 900px;
+    margin-top: 50px;
+    display: none;
+}
+.contest img{
+    width: 275px;
+    height: 275px;
+}
+.contest > div{
+    flex: 1;
+}
+.contest h1{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contest .handimagecontainer{
+    display: flex;
+    justify-content: center;
+}
+.referee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.referee h1{
+    font-size: 40px;
+    letter-spacing: 2.5px;
+}
+.newGame{
+    background-color: whitesmoke;
+    font-size: 25px;
+    padding: 12px 24px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    transition: all 0.15s;
+}
+.newGame:hover{
+    background-color: rgb(255, 255, 131) ;
+}
